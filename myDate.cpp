@@ -1,11 +1,17 @@
 
 #include <iostream>
 #include <string>
+<<<<<<< HEAD
 #include <math.h>
 using namespace std;
 #include "myDate.h"
 
 
+=======
+using namespace std;
+#include "myDate.h"
+
+>>>>>>> f3c5b83d90d5bef1b7270c41a773357e1e9160d9
 myDate::myDate() {}
 myDate::myDate(int m, int d, int y){
     month = m;
@@ -85,7 +91,10 @@ void myDate::display(){
     cout << monthName << " " << day << ", " << year << endl;
 }
 
+<<<<<<< HEAD
 // Date increments and decrements
+=======
+>>>>>>> f3c5b83d90d5bef1b7270c41a773357e1e9160d9
 void myDate::addMonth() {
     month++;
     if (month > 12){
@@ -93,6 +102,7 @@ void myDate::addMonth() {
         year++;
     }
 }
+<<<<<<< HEAD
 void myDate::increaseDate() {
     int adder = Greg2Julian(month,day,year);
     Julian2Greg(++adder,month,day,year);
@@ -101,6 +111,8 @@ void myDate::decreaseDate() {
     int adder = Greg2Julian(month,day,year);
     Julian2Greg(--adder,month,day,year);
 }
+=======
+>>>>>>> f3c5b83d90d5bef1b7270c41a773357e1e9160d9
 
 // The Get Functions for bringing back int values of date attributes
 int myDate::getMonth(){
@@ -113,7 +125,10 @@ int myDate::getYear(){
     return year;
 }
 
+<<<<<<< HEAD
 // returns the Julian day of the year
+=======
+>>>>>>> f3c5b83d90d5bef1b7270c41a773357e1e9160d9
 int myDate::dayOfYear(){
     int currYear = this->getYear();
     int startOfYear = this->Greg2Julian(1,1,currYear);
@@ -123,7 +138,10 @@ int myDate::dayOfYear(){
     return targetDate-startOfYear+1;
 }
 
+<<<<<<< HEAD
 // finds the amount of days between two dates.
+=======
+>>>>>>> f3c5b83d90d5bef1b7270c41a773357e1e9160d9
 int myDate::daysBetween(myDate D) {
     int Dday = D.getDay();
     int Dmonth = D.getMonth();
@@ -139,6 +157,7 @@ int myDate::daysBetween(myDate D) {
         return Cdate - Ddate;
     }
 }
+<<<<<<< HEAD
 
 string myDate::dayname(){
     int JulDay = this->getDay();
@@ -162,4 +181,6 @@ string myDate::dayname(){
             return "error";
     }
 }
+=======
+>>>>>>> f3c5b83d90d5bef1b7270c41a773357e1e9160d9
 #include "myDate.h"

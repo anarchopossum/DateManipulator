@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 /*
  * THIS IS FOR DEBUG PURPOSES ONLY
  */
+=======
+>>>>>>> f3c5b83d90d5bef1b7270c41a773357e1e9160d9
 #include <iostream>
 #include "myDate.h"
 
@@ -25,6 +28,7 @@ int main() {
     cout << "\nDay of year tester:";
     cout <<a.dayOfYear();
 
+<<<<<<< HEAD
     cout<<"\n"<<a.daysBetween(compdate)<<endl;
 
 
@@ -36,5 +40,14 @@ int main() {
     }
 
     cout << a.dayname();
+=======
+    cout<<"\n"<<a.daysBetween(compdate);
+    /*
+     * for (int i = 0; i < 12; ++i) {
+        a.addMonth();
+        a.display();
+    }
+*/
+>>>>>>> f3c5b83d90d5bef1b7270c41a773357e1e9160d9
 
 }
